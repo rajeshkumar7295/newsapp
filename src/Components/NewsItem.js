@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React  from 'react'
 
-export default class NewsItem extends Component {
-  render() {
+ const NewsItem =(props) => {
+  
     
-    let {title,description,imageUrl,newsUrl,author,date,source}=this.props;
+    let {title,description,imageUrl,newsUrl,author,date,source}=props;
     return (
       <>
       <div className="card" >
@@ -21,6 +21,7 @@ export default class NewsItem extends Component {
     </div>
       </>
     )
-  }
+  
 }
+export default NewsItem;
 // https://cdn-static.dagospia.com/img/patch/11-2022/elon-musk-twitter-meme-1749130.jpg
